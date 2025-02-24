@@ -1,1 +1,1 @@
-This is an analysis of the public dataset "TheLook eCommerce" with Google BigQuery
+This is an analysis of the public dataset "TheLook eCommerce" from Google BigQuery
