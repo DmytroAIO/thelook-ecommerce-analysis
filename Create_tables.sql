@@ -135,7 +135,7 @@ CREATE TABLE orders_ecommerce (
 	frequency INT,
 	monetary numeric(10, 2),
 	product_category VARCHAR(255),
-	product_name VARCHAR(255),
+	brand VARCHAR(255),
 	status VARCHAR(32),
 	rfm_segment TEXT,
 	cost_price numeric(10, 2),
