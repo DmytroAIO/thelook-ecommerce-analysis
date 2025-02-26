@@ -98,15 +98,9 @@ SELECT
 	oi.order_date,
 	oi.gender,
 	oi.age_group,
-	CASE
-		WHEN rfm_segm.recency is NULL
-		THEN 0 ELSE rfm_segm.recency END,
-	CASE
-		WHEN rfm_segm.frequency is NULL
-		THEN 0 ELSE rfm_segm.frequency END,
-	CASE
-		WHEN rfm_segm.monetary is NULL
-		THEN 0 ELSE rfm_segm.monetary END,
+	rfm_segm.recency,
+	rfm_segm.frequency,
+	rfm_segm.monetary,
 	oi.product_category,
 	oi.brand,
 	oi.status,
